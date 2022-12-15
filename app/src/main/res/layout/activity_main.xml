@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etfno"
+        android:textSize="40dp"
+        android:hint="enter first no"
+        android:layout_margin="16dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etsno"
+        android:textSize="40dp"
+        android:hint="enter second no"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/etfno"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnadd"
+        android:text="+"
+        android:textSize="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etsno"
+        android:onClick="add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsub"
+        android:text="-"
+        android:textSize="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etsno"
+        android:onClick="sub"
+        android:layout_toRightOf="@+id/btnadd"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnmul"
+        android:text="*"
+        android:textSize="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etsno"
+        android:onClick="mul"
+        android:layout_toRightOf="@+id/btnsub"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndiv"
+        android:text="/"
+        android:textSize="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etsno"
+        android:onClick="div"
+        android:layout_toRightOf="@+id/btnmul"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result ="
+        android:id="@+id/result"
+        android:textSize="40dp"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnsub" />
+</RelativeLayout>
